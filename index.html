@@ -36,6 +36,9 @@
   <link rel="icon" href="../img/favicon.png" type="image/x-icon">
   <link rel="shortcut icon" href="#">
 
+  <!-- ion icons -->
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
   <link rel="icon" sizes="114x114" href="../img/favicon114.png" type="image/x-icon">
   <link rel="icon" sizes="72x72" href="../img/favicon72.png" type="image/x-icon">
   <link rel="icon" sizes="144x144" href="../img/favicon144.png" type="image/x-icon">
@@ -53,75 +56,164 @@
 <body class="it theme-colored background">
 
   <header class="theme-colored backgroundAlpha">
-    <img src="img/covid19_response.svg" alt="CovidResponse UN">
-    <h2 class="en">Covid Toolkit</h2>
-    <h2 class="it">Covid Toolkit</h2>
-    <img src="img/stayhome.svg" alt="StayHome">
-    <ol id="menu" class="theme-colored lighttext">
-      <li class="en"><a href="#svago">Have fun</a></li>
-      <li class="it"><a href="#svago">Svago</a></li>
-      <!-- <li class="en"><a href="#svago">Tools</a></li>
-      <li class="it"><a href="#svago">Strumenti utili</a></li> -->
-      <li class="en"><a href="#covid">Stats</a></li>
-      <li class="it"><a href="#covid">Statistiche</a></li>
-      <li class="en"><a href="#" onclick="toggleLang()">italiano?</a></li>
-      <li class="it"><a href="#" onclick="toggleLang()">english?</a></li>
+    <img src="img/covid19_response.svg" class="theme-colored image" alt="CovidResponse UN">
+    <h2 class="">Covid Kit</h2>
+    <img src="img/stayhome.svg" class="theme-colored image" alt="StayHome">
+
+    <ol id="menu">
+      <li><a class="theme-colored lighttext" href="#tools"><ion-icon name="hammer-sharp"></ion-icon></a></li>
+      <li><a class="theme-colored lighttext" href="#game"><ion-icon name="game-controller"></ion-icon></a></li>
+      <li><a class="theme-colored lighttext" href="#video"><ion-icon name="videocam"></ion-icon></a></li>
+      <li><a class="theme-colored lighttext" href="#covid"><ion-icon name="stats-chart"></ion-icon></a></li>
+      <li><a class="theme-colored lighttext" href="#art"><ion-icon name="color-palette-sharp"></ion-icon></a></li>
+      <li><a class="theme-colored lighttext" href="#read"><ion-icon name="book-sharp"></ion-icon></a></li>
+      <li><a class="theme-colored lighttext" href="#" onclick="toggleLang()"><ion-icon name="language"></ion-icon></a></li>
+      <li><span class="it">EN</span><span class="en">IT</span></li>
     </ol>
   </header>
 
-  <div id="container">
+  <div id="container" class="column">
 
-    <div class="list" id="svago">
+    <p class="it intro">
+      Ciao! Dato il protrarsi della quarantena servono sempre strumenti telematici (e non) utili e modi di svagarsi, quindi ho pensato di raccogliere qui alcuni link vari tra giochi, arte, statistiche sul covid e tanto altro. Buona navigazione e condividi pure questa pagina. <br> <br>
+      Covid-19 Kit by <a class="theme-colored lighttext" href="https://flowin.space" target="_blank"
+        rel="noopener noreferrer">FlowIn.Space</a>
+    </p>
+    <p class="en intro">
+      Hi! Since the quarantine's end is nowhere near, I decided to group here some useful tools (telematic and not). Here you can find games, art, covid stats and much more. Have a glance here and feel free to share. <br><br>
+      Covid-19 Kit by <a class="theme-colored lighttext" href="https://flowin.space" target="_blank" rel="noopener noreferrer">FlowIn.Space</a>
+    </p>
+
+    <div class="list" id="tools">
+      <h2 class="listTitle it">Strumenti telematici</h2>
+      <h2 class="listTitle en">Telematic tools</h2>
+      <ol>
+
+        <li class="theme-colored lighttext">
+          <span style="background-image: url('img/jitsi.png')" class="cover"></span>
+          <h4 class="it">Videoconferenze - Jitsi</h4>
+          <h4 class="en">Videoconference - Jitsi</h4>
+          <p class="it">Mai come in questo periodo le videochat sono all'ordine del giorno, e i software proprietari (che conservano tutte le nostre interazioni, anche intime e personali) non offrono buone garanzie di privacy. Per questo <a class="theme-colored lighttext" href="http://https://jitsi.org/" target="_blank" rel="noopener noreferrer">Jitsi</a> ci offre una piattaforma sicura (cifrata), senza: login, limiti di persone o di tempo, è opensource. Non è necessaria alcuna installazione (ma esistono le app su tutte le piattaforme mobili) ed è possibile impostare una password per il meeting e prendervi parte tramite telefono (VoIP)! Di seguito trovate vari server che offrono questo servizio.</p>
+          <p class="en">
+            In this quarantine videochats are one of the most daily used tools, from work to intimate meetings. We should take care about our privacy as much as our relationships, that's why there's <a class="theme-colored lighttext" href="http://https://jitsi.org/" target="_blank" rel="noopener noreferrer">Jitsi</a>, a secure, private (encrypted), opensource, accountless, with no user and time limits. There are many servers listed below, there's no need of any installation (there are apps for any mobile platform anyway), and you can even have a chat from a VoIP.
+          </p>
+
+          <a href="https://meet.jit.si" class="button goto theme-colored background" target="_blank"
+            data-text-en="Official Jitsi" data-text-it="Jitsi ufficiale"></a>
+          <a href="https://vc.autistici.org/" class="button goto theme-colored background" target="_blank"
+            data-text-en="A/I Jitsi" data-text-it="A/I Jitsi"></a>
+          <a href="https://calls.disroot.org/" class="button goto theme-colored background" target="_blank"
+            data-text-en="Disroot Jitsi" data-text-it="Disroot Jitsi"></a>
+        </li>
+
+
+        <li class="theme-colored lighttext">
+          <span style="background-image: url('img/disroot.jpg')" class="cover"></span>
+          <h4 class="">Disroot Covid Kit</h4>
+          <!-- <h4 class="en"></h4> -->
+          <p class="it"><a class="theme-colored lighttext" href="https://disroot.org/it/about"
+              target="_blank">Disroot</a> è
+            un progetto opensource mantenuto dalla comunità. Offre molti servizi, tra cui: <a
+              class="theme-colored lighttext" href="https://calls.disroot.org/" target="_blank"
+              rel="noopener noreferrer">video conferenze</a>, <a class="theme-colored lighttext"
+              href="https://pad.disroot.org/" target="_blank" rel="noopener noreferrer">blocco note condiviso</a>,
+            <a class="theme-colored lighttext" href="https://upload.disroot.org/" target="_blank"
+              rel="noopener noreferrer">upload di file</a>, <a class="theme-colored lighttext"
+              href="https://poll.disroot.org/" target="_blank" rel="noopener noreferrer">crea sondaggi</a> e molto
+            altro.
+            <br> Qui di seguito trovi il loro kit che mi ha ispirato per fare questa pagina.</p>
+          <p class="en">
+            <a class="theme-colored lighttext" href="https://disroot.org/en/about" target="_blank">Disroot</a> is an
+            opensource project driven by its community. Offers many online services, such as: <a
+              class="theme-colored lighttext" href="https://calls.disroot.org/" target="_blank"
+              rel="noopener noreferrer">video conferences</a>, <a class="theme-colored lighttext"
+              href="https://pad.disroot.org/" target="_blank" rel="noopener noreferrer">shared notepad</a>, <a
+              class="theme-colored lighttext" href="https://upload.disroot.org/" target="_blank"
+              rel="noopener noreferrer">file upload</a>, <a class="theme-colored lighttext"
+              href="https://poll.disroot.org/" target="_blank" rel="noopener noreferrer">poll creator</a> and much
+            more. <br> Below you can find their
+            <i>covid kit</i> wich inspired this page.
+          </p>
+
+          <a href="https://disroot.org/it/covid19" class="button goto theme-colored background it" target="_blank"
+            data-text-it="Visita"></a>
+          <a href="https://disroot.org/it/covid19" class="button goto theme-colored background en" target="_blank"
+            data-text-en="Visit"></a>
+        </li>
+
+        <!-- <li class="theme-colored lighttext">
+          <span style="background-image: url('img/.jpg')" class="cover"></span>
+          <h4 class="it"></h4>
+          <h4 class="en"></h4>
+          <p class="it"></p>
+          <p class="en"></p>
+          <a href="" class="button goto theme-colored background" target="_blank"
+            data-text-en="Visit" data-text-it="Visita"></a>
+        </li> -->
+
+      </ol>
+    </div>
+
+    <div class="list" id="game">
       <h2 class="listTitle it">Svago</h2>
       <h2 class="listTitle en">Have fun!</h2>
       <ol>
         <li class="theme-colored lighttext">
-          <span style="background-image: url('img/minhex.png')" class="cover"></span>
+          <span style="background-image: url('img/minhex.jpg')" class="cover"></span>
           <h4>MinHex</h4>
-          <p class="it">MinHex è un campo minato in cui avete l'obbiettivo di sopravvivere spianando la strada per i vostri compagni. Siete
-          stati catapultati su di un campo minato suddiviso in celle di forma triangolare e disposte secondo il reticolo
-          esagonale.</p>
-          <p class="en">MinHex is based on <i>Mines</i> the popular game. Your goal is to stay alive and explore a mine-field. The main difference with the original game is that it's built with an hexagonal lattice.</p>
-          <a href="https://flowin.space/minhex" class="button goto theme-colored background" target="_blank" data-text-en="Play" data-text-it="Gioca">!</a>
+          <p class="it">MinHex è un campo minato in cui avete l'obbiettivo di sopravvivere spianando la strada per i
+            vostri compagni. Siete
+            stati catapultati su di un campo minato suddiviso in celle di forma triangolare e disposte secondo il
+            reticolo
+            esagonale.</p>
+          <p class="en">MinHex is based on <i>Mines</i> the popular game. Your goal is to stay alive and explore a
+            mine-field. The main difference with the original game is that it's built with an hexagonal lattice.</p>
+          <a href="https://flowin.space/minhex" class="button goto theme-colored background" target="_blank"
+            data-text-en="Play" data-text-it="Gioca">!</a>
         </li>
         <li class="theme-colored lighttext">
           <span style="background-image: url('img/jastersind.png')" class="cover"></span>
           <h4>JasterSind</h4>
-          <p class="en">The original Master Mind is essentially a code-breaking game for two players (here one is the computer).
-          The game selects some random colors (choose how many to start new game).
-          Your goal is to guess what the game randomly chose!</p>
-          <p class="it">Il gioco originale Master Mind è per due giocatori (qui uno è il computer) in cui l'utente deve indovinare i colori selezionati - casualmente - dal computer attraverso dei tentativi da fare con delle combinazioni dei colori possibili.
-          The game selects some random colors (choose how many to start new game).
-          Your goal is to guess what the game randomly chose!</p>
-          <a href="https://flowin.space/jastersind" class="button goto theme-colored background" target="_blank" data-text-en="Play" data-text-it="Gioca">!</a>
+          <p class="en">The original Master Mind is essentially a code-breaking game for two players (here one is
+            the computer).
+            The game selects some random colors (choose how many to start new game).
+            Your goal is to guess what the game randomly chose!</p>
+          <p class="it">Il gioco originale Master Mind è per due giocatori (qui uno è il computer) in cui l'utente
+            deve indovinare i colori selezionati - casualmente - dal computer attraverso dei tentativi da fare con
+            delle combinazioni dei colori possibili.
+            The game selects some random colors (choose how many to start new game).
+            Your goal is to guess what the game randomly chose!</p>
+          <a href="https://flowin.space/jastersind" class="button goto theme-colored background" target="_blank"
+            data-text-en="Play" data-text-it="Gioca">!</a>
         </li>
-         <li class="theme-colored lighttext">
-           <span style="background-image: url('img/am.png')" class="cover"></span>
-           <h4 class="it">Arte Migrante (serate virtuali)</h4>
-           <h4 class="en">Arte Migrante (virtual meetings)</h4>
-           <p class="it"><a class="theme-colored lighttext" href="http://www.artemigrante.eu/chi-siamo">Arte
-               Migrante</a> È un gruppo, apartitico e aconfessionale che organizza serate settimanali aperte a tutti con
-             l’intento di creare inclusione attraverso l’arte: partecipano studenti, migranti, senza dimora lavoratori e
-             disoccupati, giovani e anziani.</p>
-           <p class="en"><a class="theme-colored lighttext" href="http://www.artemigrante.eu/chi-siamo">Arte
-               Migrante</a> is a non-party and a non-denominational group. It organizes weekly meetings that are open to
-             everybody , aiming to promote inclusion though art. It welcomes students, migrants, homeless people,
-             workers, unemployed, young people and elders. </p>
-           <a href="https://www.facebook.com/PisaAM/" class="button goto theme-colored background" target="_blank"
-             data-text-en="Stay tuned" data-text-it="Rimani aggiornato">!</a>
-         </li>
         <li class="theme-colored lighttext">
           <span style="background-image: url('img/cloch.png')" class="cover"></span>
           <h4>Cloch</h4>
-          <p class="it">Un orologio «grafico» costruito su un esagono, che cerca un approccio diverso nello scandire il tempo. Una volta
-          capito sarà semplice capire l'ora persino vedendolo a distanza o di sfuggita.</p>
-          <p class="en">A clock built over an hexagon. Cloch tries to create a different approach in timing, once you are confident with it would be much simpler to know the time at a glance.</p>
-          <a href="https://flowin.space/cloch" class="button goto theme-colored background" target="_blank" data-text-en="Try it" data-text-it="Provalo">!</a>
+          <p class="it">Un orologio «grafico» costruito su un esagono, che cerca un approccio diverso nello scandire
+            il tempo. Una volta
+            capito sarà semplice capire l'ora persino vedendolo a distanza o di sfuggita.</p>
+          <p class="en">A clock built over an hexagon. Cloch tries to create a different approach in timing, once
+            you are confident with it would be much simpler to know the time at a glance.</p>
+          <a href="https://flowin.space/cloch" class="button goto theme-colored background" target="_blank"
+            data-text-en="Try it" data-text-it="Provalo">!</a>
         </li>
       </ol>
     </div>
     
-    <div class="list" id="stats">
+    <div class="list" id="video">
+      <h2 class="listTitle it">Video</h2>
+      <h2 class="listTitle en">Videos</h2>
+      <ol>
+        <li class="theme-colored lighttext">
+          <span style="background-image: url('img/cartmort1.png')" class="cover"></span>
+          <h4 class="it">Cartoni Morti - Serve davvero la mascherina?</h4>
+          <h4 class="en">Dead Cartoons - I REALLY need a face mask!</h4>
+          <a href="https://www.youtube.com/watch?v=JQBOs3XuSO8" class="button goto theme-colored background" target="_blank" data-text-en="Watch it" data-text-it="Guardalo">!</a>
+        </li>
+      </ol>
+    </div>
+    
+        <div class="list" id="covid">
       <h2 class="listTitle it">Statistiche</h2>
       <h2 class="listTitle en">Stats</h2>
       <ol>
@@ -129,42 +221,59 @@
           <span style="background-image: url('img/wom.png')" class="cover"></span>
           <h4 class="it">Statistiche mondiali</h4>
           <h4 class="en">World's covid stats</h4>
-          <p class="it">Worldometer è portato avanti da un team internazionale di sviluppatori, ricercatori e volontari con l'obbiettivo di rendere accessibili le statistiche al mondo intero con particolare focus sulla temporalità e stimolazione di una lettura critica dei dati. Pubblicato da un ristretto gruppo di compagnie digitali indipendenti basate negli USA, senza alcuna affiliazione politica, governativa o aziendale.</p>
-          <p class="en">Worldometer is run by an international team of developers, researchers, and volunteers with the goal of making world statistics available in a thought-provoking and time relevant format to a wide audience around the world. It is published by a small and independent digital media company based in the United States. We have no political,
-          governmental, or corporate affiliation.</p>
-          <a href="https://www.worldometers.info/coronavirus/" class="button goto theme-colored background" target="_blank"
-            data-text-en="Visit" data-text-it="Visita"></a>
+          <p class="it">Worldometer è portato avanti da un team internazionale di sviluppatori, ricercatori e volontari
+            con l'obbiettivo di rendere accessibili le statistiche al mondo intero con particolare focus sulla
+            temporalità e stimolazione di una lettura critica dei dati. Pubblicato da un ristretto gruppo di compagnie
+            digitali indipendenti basate negli USA, senza alcuna affiliazione politica, governativa o aziendale.</p>
+          <p class="en">Worldometer is run by an international team of developers, researchers, and volunteers with the
+            goal of making world statistics available in a thought-provoking and time relevant format to a wide audience
+            around the world. It is published by a small and independent digital media company based in the United
+            States. We have no political,
+            governmental, or corporate affiliation.</p>
+          <a href="https://www.worldometers.info/coronavirus/" class="button goto theme-colored background"
+            target="_blank" data-text-en="Visit" data-text-it="Visita"></a>
         </li>
         <li class="theme-colored lighttext">
-          <span style="background-image: url('img/itpcmap.png')" class="cover"></span>
+          <span style="background-image: url('img/itpcmap.jpg')" class="cover"></span>
           <h4 class="it">Diffusione in Italia (mappa e dati)</h4>
           <h4 class="en">Covid's in Italy (map and stats)</h4>
-          <p class="it">Mappa diffusione covid-19, aggiornata quotidianamente per regione e provincia di tutta l'Italia, fornita dalla Protezione Civile.</p>
+          <p class="it">Mappa diffusione covid-19, aggiornata quotidianamente per regione e provincia di tutta l'Italia,
+            fornita dalla Protezione Civile.</p>
           <p class="en">Map of covid-19 spread in Italy by region or province, made by <i>Protezione Civile.</i></p>
-          <a href="http://opendatadpc.maps.arcgis.com/apps/opsdashboard/index.html#/b0c68bce2cce478eaac82fe38d4138b1" class="button goto theme-colored background" target="_blank" data-text-en="Visit" data-text-it="Visita"></a>
-          <a href="http://opendatadpc.maps.arcgis.com/apps/opsdashboard/index.html#/dae18c330e8e4093bb090ab0aa2b4892" class="button goto theme-colored background" target="_blank" data-text-en="(mobile)" data-text-it="(mobile)"></a>
+          <a href="http://opendatadpc.maps.arcgis.com/apps/opsdashboard/index.html#/b0c68bce2cce478eaac82fe38d4138b1"
+            class="button goto theme-colored background" target="_blank" data-text-en="Visit" data-text-it="Visita"></a>
+          <a href="http://opendatadpc.maps.arcgis.com/apps/opsdashboard/index.html#/dae18c330e8e4093bb090ab0aa2b4892"
+            class="button goto theme-colored background" target="_blank" data-text-en="(mobile)"
+            data-text-it="(mobile)"></a>
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiNTE2NWM3ZjktZGFlNi00MzYxLWJlMzEtYThmOWEzYjA1MGNhIiwidCI6ImFmZDBhNzVjLTg2NzEtNGNjZS05MDYxLTJjYTBkOTJlNDIyZiIsImMiOjh9"
+            class="button goto theme-colored background" target="_blank" data-text-en="Distribuited materials"
+            data-text-it="Materiali distribuiti"></a>
         </li>
-        
+
         <li class="theme-colored lighttext">
-          <span style="background-image: url('img/whomap.png')" class="cover"></span>
+          <span style="background-image: url('img/whomap.jpg')" class="cover"></span>
           <h4 class="it">Mappa covid mondiale</h4>
           <h4 class="en">World's covid map</h4>
-          <p class="it">Mappa, dati e altro dell'Organizzazione Mondiale della Sanità (OMS).</p>
-          <p class="en">World Health Organization's official map and stats.</p>
+          <p class="it">Mappa, dati e altro dell'Organizzazione Mondiale della Sanità (OMS), e altre piattaforme per la visualizzazione.</p>
+          <p class="en">World Health Organization's official map and stats, and other sites for data visualization.</p>
           <a href="https://covid19.who.int/" class="button goto theme-colored background" target="_blank"
-            data-text-en="Visit" data-text-it="Visita"></a>
+            data-text-en="WHO Map" data-text-it="Mappa OMS"></a>
+          <a href="https://covid.amcharts.com/" class="button goto theme-colored background" target="_blank"
+            data-text-en="AMcharts Map" data-text-it="Mappa AMcharts"></a>
         </li>
-        
+
         <li class="theme-colored lighttext">
           <span style="background-image: url('img/salutecovid.jpg')" class="cover"></span>
           <h4 class="it">Ministero della Salute</h4>
           <h4 class="en">Italian Healthcare</h4>
-          <p class="it">Sito ufficiale del Ministero della Salute della Repubblica Italiana, sezione covid-19, con news dati, consigli, rubriche e domande frequenti. Con indicazioni sulle ultime direttive ministeriali.</p>
-          <p class="en">Official website of the Healthcare Ministery of Italy, with FAQ, stats, governments laws about covid-19 and many more.</p>
-          <a href="http://www.salute.gov.it/nuovocoronavirus" class="button goto theme-colored background" target="_blank"
-            data-text-en="Visit" data-text-it="Visita"></a>
+          <p class="it">Sito ufficiale del Ministero della Salute della Repubblica Italiana, sezione covid-19, con news
+            dati, consigli, rubriche e domande frequenti. Con indicazioni sulle ultime direttive ministeriali.</p>
+          <p class="en">Official website of the Healthcare Ministery of Italy, with FAQ, stats, governments laws about
+            covid-19 and many more.</p>
+          <a href="http://www.salute.gov.it/nuovocoronavirus" class="button goto theme-colored background"
+            target="_blank" data-text-en="Visit" data-text-it="Visita"></a>
         </li>
-        
+
         <!-- <li class="theme-colored lighttext">
           <h4 class="it"></h4>
           <h4 class="en"></h4>
@@ -174,6 +283,63 @@
             data-text-en="Visit" data-text-it="Visita"></a>
         </li> -->
 
+      </ol>
+    </div>
+
+    <div class="list" id="art">
+      <h2 class="listTitle it">Arte</h2>
+      <h2 class="listTitle en">Art</h2>
+      <ol>
+        <li class="theme-colored lighttext">
+          <span style="background-image: url('img/am.svg')" class="cover"></span>
+          <h4 class="it">Arte Migrante (serate virtuali)</h4>
+          <h4 class="en">Arte Migrante (virtual meetings)</h4>
+          <p class="it"><a class="theme-colored lighttext" href="http://www.artemigrante.eu/chi-siamo">Arte
+              Migrante</a> È un gruppo, apartitico e aconfessionale che organizza serate settimanali aperte a tutti con
+            l’intento di creare inclusione attraverso l’arte: partecipano studenti, migranti, senza dimora lavoratori e
+            disoccupati, giovani e anziani.</p>
+          <p class="en"><a class="theme-colored lighttext" href="http://www.artemigrante.eu/chi-siamo">Arte Migrante</a> is a non-party and a non-denominational group. It organizes weekly meetings that are open to
+            everybody , aiming to promote inclusion though art. It welcomes students, migrants, homeless people,
+            workers, unemployed, young people and elders. </p>
+          <a href="https://www.facebook.com/PisaAM/" class="button goto theme-colored background" target="_blank"
+            data-text-en="Stay tuned" data-text-it="Seguici"></a>
+        </li>
+
+
+        <li class="theme-colored lighttext">
+          <span style="background-image: url('img/pov.jpg')" class="cover"></span>
+          <h4 class="">Point of Vision</h4>
+          <p class="it">Point of Vision è un mio progetto artistico, al momento è rappresentato da una serie di illustrazioni digitali intitolata <i>Senza Parole</i>, che rappresenta parole e sentimenti intraducibili in un modo grafico e moderno. Le immagini non ne cercano di descrivere il significato ma sono frutto delle sensazioni e dei loro influssi. <br> Dove l'immaginazione inizia. Dove le parole non arrivano.</p>
+          <p class="en">Point of Vision is a personal project of mine, now it has a set of digital artwork representing untranslatable words and feelings, in a artistic and modern way. The images don't try to describe the meaning of the words but the sensations they created in me while drawing them. <br> Where the imagination begins. Where words can't reach.</p>
+          <a href="https://flowin.space/vision" class="button goto theme-colored background" target="_blank"
+            data-text-en="Explore" data-text-it="Esplora"></a>
+        </li>
+        
+        <li class="theme-colored lighttext">
+          <span style="background-image: url('img/impressions.jpg')" class="cover"></span>
+          <h4 class="it">Impressioni (in arrivo)</h4>
+          <h4 class="en">Impressions (coming)</h4>
+          <p class="it">Raccolta personale di alcune foto scattate negli anni con le mie fedeli compagne di viaggio, una <i>Nikon D5000</i> e una <i>Olympus EM10-III</i>.</p>
+          <p class="en">A collection of some of my shots made in the last years made with my <i>Nikon D5000</i> and an <i>Olympus EM10-III</i>.</p>
+          <!-- <a href="#" class="button goto theme-colored background" target="_blank" data-text-en="Visit" data-text-it="Visita"></a> -->
+        </li>
+
+      </ol>
+    </div>
+
+    <div class="list" id="read">
+      <h2 class="listTitle it">Letture</h2>
+      <h2 class="listTitle en">Reading</h2>
+      <ol>
+        <li class="theme-colored lighttext">
+          <span style="background-image: url('https://static.ilmanifesto.it/2020/04/01clt2aperturahank-willis-thomas-a-place-to-call-home.jpg')" class="cover"></span>
+          <h4 class="it"> Un evento inatteso che spinge verso la poesia della vita</h4>
+          <h4 class="en"></h4>
+          <p class="it">Pandemia: la filosofia dello stato d’eccezione cambia. E la cooperazione può prevalere sulla competizione. Riflessioni sull'attuale situazione di <a class="theme-colored lighttext" href="https://it.wikipedia.org/wiki/Alfonso_Maurizio_Iacono">Alfonso M. Iacono</a> filosofo e docente ordinario di storia della Filosofia all'Università di Pisa.</p>
+          <p class="en">Pandemic: the philosophy of the <i>state of exeption</i> changes. How cooperation can prevail over competition. Thoughts about the current covid situation by <a class="theme-colored lighttext" href="https://it.wikipedia.org/wiki/Alfonso_Maurizio_Iacono">Alfonso M. Iacono</a>, an italian Phylosopher, ordinary professor of <i>History of Phylosophy</i> at Universtà di Pisa.</p>
+          <a href="https://ilmanifesto.it/un-evento-inatteso-che-spinge-verso-la-poesia-della-vita/" class="button goto theme-colored background" target="_blank"
+            data-text-en="Stay tuned" data-text-it="Seguici"></a>
+        </li>
       </ol>
     </div>
 
