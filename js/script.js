@@ -50,7 +50,7 @@ window.addEventListener("scroll", event => {
     mainNavLinks.forEach(link => {
         let section = document.querySelector(link.hash);
 
-        if (section.offsetTop <= fromTop && 
+        if (section.offsetTop - 100 <= fromTop && 
             section.offsetTop + section.offsetHeight > fromTop) {
             link.classList.add("active");
         } else {
