@@ -46,12 +46,13 @@ let cur = [];
 // https://css-tricks.com/sticky-smooth-active-nav/
 window.addEventListener("scroll", event => {
     let fromTop = window.scrollY;
+    customOffset = 100;
 
     mainNavLinks.forEach(link => {
         let section = document.querySelector(link.hash);
 
-        if (section.offsetTop - 100 <= fromTop && 
-            section.offsetTop + section.offsetHeight > fromTop) {
+        if (section.offsetTop - customOffset <= fromTop && 
+            section.offsetTop + section.offsetHeight - customOffset > fromTop) {
             link.classList.add("active");
         } else {
             link.classList.remove("active");
