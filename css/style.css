@@ -250,3 +250,9 @@ body #container .list ol li .button:hover {
     background: #00000080 !important;
     color: #fff !important;
 }
+
+footer {
+    padding: 5%;
+    text-align: center;
+    line-height: 1.3em;
+}
