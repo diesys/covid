@@ -44,13 +44,14 @@ body header {
     z-index: 5;
     text-shadow: 0 1px 5px #11111160;
     box-shadow: 0 0 20px -2px #00000060;
-    height: 6em;
+    height: 4.5em;
     overflow: hidden;
 }
 body header > * {
     margin: 1em;
+    align-self: center;
 }
-body header > h2 {
+body header h2 {
     align-self: flex-start;
 }
 body header img {
@@ -60,12 +61,13 @@ body header a {
     color: #eeeeeef0;
 }
 body header #menu {
-    position: absolute;
+    /* position: absolute; */
     bottom: 4px;
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
+    justify-content: center;
 }
 body header #menu a {
     margin: 0 2px;
@@ -83,6 +85,43 @@ body header #menu a:hover {
 body header #menu a ion-icon {
     font-size: 22px;
     vertical-align: middle;
+}
+
+@media screen and (max-width: 800px) {
+    body header {
+        display: grid;
+        height: min-content;
+        grid-template-columns: 20% 1fr 20%;
+        grid-template-rows: 4em 2em;
+        grid-template-areas: "covid title stayhome"
+                             "covid menu stayhome";
+        justify-content: center;
+        align-content: center;
+    }
+    body header #menu {
+        padding-bottom: 10px;
+        grid-area: menu;
+    }
+    body header #stayhomelogo {grid-area: stayhome;}
+    body header #covidlogo {grid-area: covid;}
+    body header #headertitle {grid-area: title;}
+}
+
+@media screen and (max-width: 500px) {
+    body header {
+        display: grid;
+        height: min-content;
+        grid-template-columns: 20% 1fr 20%;
+        grid-template-rows: 4em 2em;
+        grid-template-areas: "covid title stayhome"
+        " menu menu menu";
+        justify-content: center;
+        align-content: center;
+        padding-bottom: 10px;
+    }
+    body header #menu {
+        padding-bottom: 0px;
+    }
 }
 
 body .intro {
