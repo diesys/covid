@@ -4,6 +4,7 @@
 }
 html {
     font-family: 'Baloo Tamma 2', Arial, cursive;
+    scroll-behavior: smooth;
 }
 body {
     margin: 0;
@@ -77,10 +78,12 @@ body header #menu a {
     text-shadow: none;
     padding: 2px 6px;
     border-radius: 10px;
-    transition: background .5s;
+    transition: all .5s;
 }
-body header #menu a:hover {
-    background-color: #00000070;
+body header #menu a:hover,
+body header #menu a.active {
+    background-color: #00000090;
+    color: #fff !important;
 }
 body header #menu a ion-icon {
     font-size: 22px;
@@ -107,7 +110,7 @@ body header #menu a ion-icon {
     body header #headertitle {grid-area: title;}
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
     body header {
         display: grid;
         height: min-content;
@@ -170,7 +173,7 @@ body #container .list ol li {
     height: min-content;
 }
 body #container .list ol li:hover {
-    background: #00000080;
+    background: #00000090;
     /* transform: translateY(-5px) */
 }
 body #container .list ol li h4 {
