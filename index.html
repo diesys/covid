@@ -62,14 +62,14 @@
       <!-- </div> -->
       
       <ol id="menu">
-        <li><a class="theme-colored lighttext" href="#tools"><ion-icon name="hammer-sharp"></ion-icon></a></li>
-        <li><a class="theme-colored lighttext" href="#game"><ion-icon name="game-controller"></ion-icon></a></li>
-        <li><a class="theme-colored lighttext" href="#video"><ion-icon name="videocam"></ion-icon></a></li>
-        <li><a class="theme-colored lighttext" href="#covid"><ion-icon name="stats-chart"></ion-icon></a></li>
-        <li><a class="theme-colored lighttext" href="#art"><ion-icon name="color-palette-sharp"></ion-icon></a></li>
-        <li><a class="theme-colored lighttext" href="#read"><ion-icon name="book-sharp"></ion-icon></a></li>
-        <li><a class="theme-colored lighttext" href="#" onclick="toggleLang()"><ion-icon name="language"></ion-icon></a></li>
-        <li><span class="it">EN</span><span class="en">IT</span></li>
+        <li data-tooltip-en="Tools" data-tooltip-it="Strumenti"><a class="theme-colored lighttext" href="#tools"><ion-icon name="hammer-sharp"></ion-icon></a></li>
+        <li data-tooltip-en="Have fun" data-tooltip-it="Svago"><a class="theme-colored lighttext" href="#game"><ion-icon name="game-controller"></ion-icon></a></li>
+        <li data-tooltip-en="Videos" data-tooltip-it="Video"><a class="theme-colored lighttext" href="#video"><ion-icon name="videocam"></ion-icon></a></li>
+        <li data-tooltip-en="Stats" data-tooltip-it="Statistiche"><a class="theme-colored lighttext" href="#covid"><ion-icon name="stats-chart"></ion-icon></a></li>
+        <li data-tooltip-en="Art" data-tooltip-it="Arte"><a class="theme-colored lighttext" href="#art"><ion-icon name="color-palette-sharp"></ion-icon></a></li>
+        <li data-tooltip-en="Reading" data-tooltip-it="Letture"><a class="theme-colored lighttext" href="#read"><ion-icon name="book-sharp"></ion-icon></a></li>
+        <li data-tooltip-en="Switch language" data-tooltip-it="Cambia lingua"><a class="theme-colored lighttext" href="#" onclick="toggleLang()"><ion-icon name="language"></ion-icon></a></li>
+        <li data-tooltip-en="Current language" data-tooltip-it="Lingua attuale"><span class="it">EN</span><span class="en">IT</span></li>
       </ol>
       <img id="stayhomelogo" src="img/stayhome.svg" class="theme-colored image" alt="StayHome">
     </header>
@@ -215,7 +215,7 @@
       </ol>
     </div>
     
-        <div class="list" id="covid">
+    <div class="list" id="covid">
       <h2 class="listTitle it">Statistiche</h2>
       <h2 class="listTitle en">Stats</h2>
       <ol>
