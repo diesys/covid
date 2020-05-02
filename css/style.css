@@ -55,6 +55,9 @@ body header > * {
 body header h2 {
     align-self: flex-start;
 }
+body header h2>a {
+    text-decoration: none !important;
+}
 body header img {
     height: calc(100% - 1em);
 }
