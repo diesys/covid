@@ -251,6 +251,18 @@ body #container .list ol li .button:hover {
     color: #fff !important;
 }
 
+body #container .list ol li .button-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+body #container .list ol li .button-group > .button {
+    flex: 1;
+    /* min-width: 80px; */
+    min-width: 50%;
+}
+body #container .list ol li .button-group > .button:nth-child(odd):not(:last-child) {
+    border-right: 1px solid #00000070;
+}
 footer {
     padding: 5%;
     text-align: center;
