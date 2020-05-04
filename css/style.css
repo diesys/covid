@@ -19,6 +19,10 @@ body {
     width: 100%;
 }
 
+a {
+    color: #ccc;
+}
+
 /* multilanguage */
 body.en *.it {
     display: none;
