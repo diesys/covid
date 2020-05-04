@@ -58,7 +58,7 @@
   <header class="theme-colored backgroundAlpha">
     <!-- <div class="menuTitle"> -->
       <img id="covidlogo" src="img/covid19_response.svg" class="theme-colored image" alt="CovidResponse UN">
-      <h2 id="headertitle" class=""><a href="#">Covid Kit</a></h2>
+      <h2 id="headertitle" class=""><a href="#"><ion-icon name="home"> </ion-icon> <span>   Covid Kit</span></a></h2>
       <!-- </div> -->
       
       <ol id="menu">
@@ -75,15 +75,32 @@
     
     <div id="container" class="column">
       
-      <p class="it intro">
-      Ciao! Dato il protrarsi della quarantena servono sempre strumenti telematici (e non) utili e modi di svagarsi, quindi ho pensato di raccogliere qui alcuni link vari tra giochi, arte, statistiche sul covid e tanto altro. Buona navigazione e condividi pure questa pagina. <br> <br>
-      Covid-19 Kit by <a class="theme-colored lighttext" href="https://flowin.space" target="_blank"
+    <div class="intro">
+      <p class="it">
+        Ciao! Per togliere un po' di noia in quarantena ho pensato di raccogliere qui alcuni link vari tra giochi, arte, statistiche sul covid e tanto altro. Buona navigazione e condividi pure questa pagina.
+        In alto trovate il menu con le varie categorie: 
+      </p>
+      <p class="en">
+        Hi! Since the quarantine's end is nowhere near, I decided to group here some useful tools (telematic and not). Here
+        you can find games, art, covid stats and much more. Have a glance here and feel free to share. 
+        On the top you'll find the menu with the categories listed below:
+      </p>
+      <p>
+        <ul id="menu_legend">
+          <li data-tooltip-en="Tools" data-tooltip-it="Strumenti"><a class="theme-colored lighttext" href="#tools"><ion-icon name="hammer-sharp"></ion-icon></a></li>
+          <li data-tooltip-en="Have fun" data-tooltip-it="Svago"><a class="theme-colored lighttext" href="#game"><ion-icon name="game-controller"></ion-icon></a></li>
+          <li data-tooltip-en="Videos" data-tooltip-it="Video"><a class="theme-colored lighttext" href="#video"><ion-icon name="videocam"></ion-icon></a></li>
+          <li data-tooltip-en="Stats" data-tooltip-it="Statistiche"><a class="theme-colored lighttext" href="#covid"><ion-icon name="stats-chart"></ion-icon></a></li>
+          <li data-tooltip-en="Art" data-tooltip-it="Arte"><a class="theme-colored lighttext" href="#art"><ion-icon name="color-palette-sharp"></ion-icon></a></li>
+          <li data-tooltip-en="Reading" data-tooltip-it="Letture"><a class="theme-colored lighttext" href="#read"><ion-icon name="book-sharp"></ion-icon></a></li>
+          <li data-tooltip-en="Switch language" data-tooltip-it="Cambia lingua"><a class="theme-colored lighttext" href="#" onclick="toggleLang()"><ion-icon name="language"></ion-icon></a></li>
+      </ul>
+      </p>
+      <p>
+        Covid-19 Kit by <a class="theme-colored lighttext" href="https://flowin.space" target="_blank"
         rel="noopener noreferrer">FlowIn.Space</a>
-    </p>
-    <p class="en intro">
-      Hi! Since the quarantine's end is nowhere near, I decided to group here some useful tools (telematic and not). Here you can find games, art, covid stats and much more. Have a glance here and feel free to share. <br><br>
-      Covid-19 Kit by <a class="theme-colored lighttext" href="https://flowin.space" target="_blank" rel="noopener noreferrer">FlowIn.Space</a>
-    </p>
+      </p>
+    </div>
 
     <div class="list" id="tools">
       <h2 class="listTitle it">Strumenti telematici</h2>
@@ -94,9 +111,9 @@
           <span style="background-image: url('img/jitsi.png')" class="cover"></span>
           <h4 class="it">Videoconferenze - Jitsi</h4>
           <h4 class="en">Videoconference - Jitsi</h4>
-          <p class="it">Mai come in questo periodo le videochat sono all'ordine del giorno, e i software proprietari (che conservano tutte le nostre interazioni, anche intime e personali) non offrono buone garanzie di privacy. Per questo <a class="theme-colored lighttext" href="http://https://jitsi.org/" target="_blank" rel="noopener noreferrer">Jitsi</a> ci offre una piattaforma sicura (cifrata), senza: login, limiti di persone o di tempo, è opensource. Non è necessaria alcuna installazione (ma esistono le app su tutte le piattaforme mobili) ed è possibile impostare una password per il meeting e prendervi parte tramite telefono (VoIP)! Di seguito trovate vari server che offrono questo servizio.</p>
+          <p class="it">In questo periodo abbiamo avuto un boom di videochat, spesso usando software proprietari che non offrono buone garanzie di privacy (conservando - e vendendo - le nostre interazioni, anche intime). Un'alternativa open-source è <a class="theme-colored lighttext" href="https://https://jitsi.org/" target="_blank" rel="noopener noreferrer">Jitsi</a>:: una piattaforma sicura (cifrata), senza: login, limiti di persone o di tempo e non necessita di installazione (esistono ugualmente le app mobili) ed è possibile impostare una password per il meeting e prendervi parte tramite telefono (VoIP)! Di seguito trovate vari server che offrono questo servizio.</p>
           <p class="en">
-            In this quarantine videochats are one of the most daily used tools, from work to intimate meetings. We should take care about our privacy as much as our relationships, that's why there's <a class="theme-colored lighttext" href="http://https://jitsi.org/" target="_blank" rel="noopener noreferrer">Jitsi</a>, a secure, private (encrypted), opensource, accountless, with no user and time limits. There are many servers listed below, there's no need of any installation (there are apps for any mobile platform anyway), and you can even have a chat from a VoIP.
+            In this quarantine videochats are one of the most daily used tools, from work to intimate meetings. We should take care about our privacy as much as our relationships, that's why there's <a class="theme-colored lighttext" href="https://https://jitsi.org/" target="_blank" rel="noopener noreferrer">Jitsi</a>, a secure, private (encrypted), opensource, accountless, with no user and time limits. There are many servers listed below, there's no need of any installation (there are apps for any mobile platform anyway), and you can even have a chat from a VoIP.
           </p>
 
           <div class="button-group">
@@ -159,7 +176,7 @@
         <li class="theme-colored lighttext">
           <span style="background-image: url('img/eigenlab_draw.png')" class="cover"></span>
           <h4 class="">eigenLab</h4>
-          <p class="it">eigenLab è un hacklab, un casottino dentro il Polo Fibonacci a Pisa, un gruppo di hacker (informatici e non). Si spazia dall'open-source e open-access, al mantenere servizi web aperti alla comunità (pad, cloud, social, recupero hardware obsoleto...), organizzare incontri divulgativi, creare discussione critica su temi di diritto alla riservatezza digitale, mantenere un orto biologico nella facoltà di scienze, nonché - fino a qualche tempo fa - l'unica stampante 3D liberamente accessibile in Università, autoprodotta. In passato ha collaborato con l'Università di Pisa in diverse occasioni (avendo anche un corso riconosciuto sugli OGM). <a class="theme-colored lighttext" href="https://eigenlab.org/2511/">Da quasi due anni è senza corrente</a> per brutale volontà del rettore UniPi Paolo Mancarella, senza alcun diritto di replica... nella speranza di averla di nuovo, nonostante la difficoltà, eigenLab non si ferma! <br> P.S. Questo sito e tutto <a href="https://flowin.space" class="theme-colored lighttext">Flowin.Space</a> sono hostati sui loro server. Grazie!</p>
+          <p class="it">eigenLab è un hacklab, oltre a mantenere servizi web aperti alla comunità (pad, cloud, social, recupero hardware obsoleto), crea discussione critica su temi di diritto alla riservatezza digitale, mantiene un orto biologico e una ciclofficina nella facoltà di Scienze e una stampante 3D autoprodotta. Ha collaborato con l'Università di Pisa in diverse occasioni ma <a class="theme-colored lighttext" href="https://eigenlab.org/2511/">da quasi due anni è senza corrente</a> per brutale volontà del rettore UniPi, nonostante la difficoltà, eigenLab non si ferma! <br> P.S. Questo sito e tutto <a href="https://flowin.space" class="theme-colored lighttext">Flowin.Space</a> sono hostati sui loro server. Grazie!</p>
           <p class="en">eigenLab is an hacklab, inside the Polo Fibonacci in Pisa, a group of hackers from computer science to biology. They concern about physical and digital privacy organizing divulgative and technical seminars, creating a discussion about our digital rights and open-source alternatives. They talk about open-access, biological gardening, 3D printing and much more. They offer many alternative open-source and decetralized services such us: cloud, pad, socials, .. and more! <br>P.S. This site and all sites inside <a href="https://flowin.space" class="theme-colored lighttext">Flowin.Space</a> are hosted on their server. Thanks!</p>
           </p>
           <a href="https://eigenlab.org" class="button goto theme-colored background" target="_blank" data-text-en="Visit " data-text-it="Visita ">Homepage</a>
@@ -241,7 +258,7 @@
             data-text-en="Watch it" data-text-it="Guardalo">!</a>
         </li>
         <li class="theme-colored lighttext">
-          <span style="background-image: url('http://kdam.iltrovatore.it/p/103/sp/10300/thumbnail/entry_id/0_wh2e16i0/type/5/width/600/quality/100/name/0_wh2e16i0.jpg')" class="cover"></span>
+          <span style="background-image: url('https://kdam.iltrovatore.it/p/103/sp/10300/thumbnail/entry_id/0_wh2e16i0/type/5/width/600/quality/100/name/0_wh2e16i0.jpg')" class="cover"></span>
           <h4 class="it">Zerocalcare - Quarantena a Rebibbia</h4>
           <h4 class="en">Zerocalcare - Rebibbia Quarantine</h4>
           <div class="button-group">
@@ -291,9 +308,7 @@
           <h4 class="it">Statistiche mondiali</h4>
           <h4 class="en">World's covid stats</h4>
           <p class="it">Worldometer è portato avanti da un team internazionale di sviluppatori, ricercatori e volontari
-            con l'obbiettivo di rendere accessibili le statistiche al mondo intero con particolare focus sulla
-            temporalità e stimolazione di una lettura critica dei dati. Pubblicato da un ristretto gruppo di compagnie
-            digitali indipendenti basate negli USA, senza alcuna affiliazione politica, governativa o aziendale.</p>
+            con l'obbiettivo di rendere accessibili le statistiche al mondo intero con particolare stimolazione di una lettura critica dei dati. Pubblicato da compagnie digitali indipendenti (USA), senza affiliazione politica, governativa o aziendale.</p>
           <p class="en">Worldometer is run by an international team of developers, researchers, and volunteers with the
             goal of making world statistics available in a thought-provoking and time relevant format to a wide audience
             around the world. It is published by a small and independent digital media company based in the United
@@ -310,9 +325,9 @@
             fornita dalla Protezione Civile.</p>
           <p class="en">Map of covid-19 spread in Italy by region or province, made by <i>Protezione Civile.</i></p>
           <div class="button-group">
-            <a href="http://opendatadpc.maps.arcgis.com/apps/opsdashboard/index.html#/b0c68bce2cce478eaac82fe38d4138b1"
+            <a href="https://opendatadpc.maps.arcgis.com/apps/opsdashboard/index.html#/b0c68bce2cce478eaac82fe38d4138b1"
               class="button goto theme-colored background" target="_blank">Desktop</a>
-            <a href="http://opendatadpc.maps.arcgis.com/apps/opsdashboard/index.html#/dae18c330e8e4093bb090ab0aa2b4892"
+            <a href="https://opendatadpc.maps.arcgis.com/apps/opsdashboard/index.html#/dae18c330e8e4093bb090ab0aa2b4892"
               class="button goto theme-colored background" target="_blank">Mobile</a>
             <a href="https://app.powerbi.com/view?r=eyJrIjoiNTE2NWM3ZjktZGFlNi00MzYxLWJlMzEtYThmOWEzYjA1MGNhIiwidCI6ImFmZDBhNzVjLTg2NzEtNGNjZS05MDYxLTJjYTBkOTJlNDIyZiIsImMiOjh9"
               class="button goto theme-colored background" target="_blank" data-text-en="Distribuited mater." data-text-it="Distrib. Materiali"></a>
@@ -341,7 +356,7 @@
             dati, consigli, rubriche e domande frequenti. Con indicazioni sulle ultime direttive ministeriali.</p>
           <p class="en">Official website of the Healthcare Ministery of Italy, with FAQ, stats, governments laws about
             covid-19 and many more.</p>
-          <a href="http://www.salute.gov.it/nuovocoronavirus" class="button goto theme-colored background"
+          <a href="https://www.salute.gov.it/nuovocoronavirus" class="button goto theme-colored background"
             target="_blank" data-text-en="Visit" data-text-it="Visita"></a>
         </li>
 
@@ -365,11 +380,11 @@
           <span style="background-image: url('img/am.svg')" class="cover"></span>
           <h4 class="it">Arte Migrante (serate virtuali)</h4>
           <h4 class="en">Arte Migrante (virtual meetings)</h4>
-          <p class="it"><a class="theme-colored lighttext" href="http://www.artemigrante.eu/chi-siamo">Arte
+          <p class="it"><a class="theme-colored lighttext" href="https://www.artemigrante.eu/chi-siamo">Arte
               Migrante</a> È un gruppo, apartitico e aconfessionale che organizza serate settimanali aperte a tutti con
             l’intento di creare inclusione attraverso l’arte: partecipano studenti, migranti, senza dimora lavoratori e
             disoccupati, giovani e anziani.</p>
-          <p class="en"><a class="theme-colored lighttext" href="http://www.artemigrante.eu/chi-siamo">Arte Migrante</a> is a non-party and a non-denominational group. It organizes weekly meetings that are open to
+          <p class="en"><a class="theme-colored lighttext" href="https://www.artemigrante.eu/chi-siamo">Arte Migrante</a> is a non-party and a non-denominational group. It organizes weekly meetings that are open to
             everybody , aiming to promote inclusion though art. It welcomes students, migrants, homeless people,
             workers, unemployed, young people and elders. </p>
           <a href="https://www.facebook.com/PisaAM/" class="button goto theme-colored background" target="_blank"
