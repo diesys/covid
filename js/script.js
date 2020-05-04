@@ -31,9 +31,21 @@ function changeColor(hue) {
     // gsap.to(document.querySelector('header'), anim_duration, {css: {background: 'linear-gradient('+ dark_clr + ',' + base_alpha_clr}})
 }
 
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+
 function toggleLang() {
     document.querySelector('body').classList.toggle('en')
     document.querySelector('body').classList.toggle('it')
+    lang = document.querySelector('body').classList.contains('it') ? 'it' : 'en'
+    window.history.replaceState({
+        'lang': lang
+    }, 'langtoggle', '?lang=' + lang);
 }
 
 
@@ -62,4 +74,7 @@ window.addEventListener("scroll", event => {
 
 window.addEventListener('load', function() {
     changeColor()
+    vars = getUrlVars()
+    if (vars['lang'] == 'en')
+        toggleLang()
 })
