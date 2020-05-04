@@ -46,6 +46,7 @@ body header {
     text-shadow: 0 1px 5px #11111160;
     box-shadow: 0 0 20px -2px #00000060;
     height: 4.5em;
+    background-color: hsl(0, 0%, 30%);
     /* overflow: hidden; */
 }
 body header > *:not(h2) {
@@ -153,6 +154,12 @@ body header #menu a ion-icon {
         margin: 0;
         margin-top: 4.4em !important;
     }
+    body {
+        overflow-x: hidden !important;
+    }
+    body #container .list ol li {
+        max-width: 100% !important;
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -170,6 +177,7 @@ body header #menu a ion-icon {
     body header #menu {
         padding-bottom: 0px;
     }
+
 }
 
 body .intro {
@@ -215,6 +223,7 @@ body #container .list ol li {
     overflow: hidden;
     /* max-width: 50%; */
     min-width: 200px;
+    max-width: 40%;
     flex: 1;
     margin: 1em;
     box-shadow: 0 2px 13px -2px #000000a0;
