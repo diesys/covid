@@ -88,7 +88,8 @@ body header #menu {
     justify-content: center;
 }
 
-body header #menu li::after {
+body header #menu li::after,
+#menu_legend li::after {
     pointer-events: none;
     position: absolute;
     height: min-content;
@@ -102,16 +103,19 @@ body header #menu li::after {
     position: absolute;
     box-shadow: 0 1px 10px #000000a0;
 }
-body header #menu li:hover::after {
+body header #menu li:hover::after,
+#menu_legend li:hover::after {
     transition: all .4s 0s;
     transform: translate(-20%, 100%);
     filter: opacity(1);
 }
 
-body.en header #menu li::after {
+body.en header #menu li::after,
+#menu_legend li::after {
     content: attr(data-tooltip-en);
 }
-body.it header #menu li::after {
+body.it header #menu li::after,
+#menu_legend li::after {
     content: attr(data-tooltip-it);
 }
 
