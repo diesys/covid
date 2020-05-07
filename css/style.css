@@ -18,7 +18,7 @@ body {
     color: #ddd;
     width: 100%;
     line-height: 1.25em;
-    z-index: 20000;
+    overflow-x: hidden;
 }
 
 a {
@@ -99,7 +99,7 @@ a:not(.notooltip)::after {
     background: #000000c0;
     line-height: 1em;
     padding: 10px;
-    filter: opacity(0);
+    filter: opacity(0) blur(2px);
     border-radius: 2em;
     transition: all .6s .1s;
     transform: translate(-20%, 120%);
@@ -112,13 +112,25 @@ body header #menu li:hover::after,
 a:not(.notooltip):hover::after {
     transition: all .4s 0s;
     transform: translate(-20%, 100%);
-    filter: opacity(1);
+    filter: opacity(1) blur(0);
 }
 
-a:not(.notooltip):hover::after {
+a:not(.notooltip)::after {
+    background: #000000e0;
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 1);
+    transform: translate(-50%, 0%);
     content: attr(href);
     text-transform: lowercase;
     font-size: 10pt;
+    left: 50%;
+    bottom: 50%;
+    max-width: 200px;
+    height: auto;
+    overflow: hidden;
+}
+a:not(.notooltip):hover::after {
+    transform: translate(-50%, -100%);
 }
 
 body.en header #menu li::after,
