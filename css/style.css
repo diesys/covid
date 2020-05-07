@@ -124,11 +124,16 @@ body header #menu a {
     padding: 2px 6px;
     border-radius: 10px;
     transition: all .5s;
+    box-shadow: 0 2px 4px #00000069 inset;
+    border-bottom: 1px solid #ffffff50;
+    border-top: 1px solid #24242400;
 }
 body header #menu a:hover,
 body header #menu a.active {
     background-color: #00000090;
     color: #fff !important;
+    box-shadow: 0 0px 2px #00000000;
+    border-top: 1px solid #2424246b;
 }
 body header #menu a ion-icon {
     font-size: 22px;
