@@ -62,13 +62,13 @@
       <!-- </div> -->
       
       <ol id="menu">
-        <li data-tooltip-en="Tools" data-tooltip-it="Strumenti"><a class="theme-colored lighttext" href="#tools"><ion-icon name="hammer-sharp"></ion-icon></a></li>
-        <li data-tooltip-en="Have fun" data-tooltip-it="Svago"><a class="theme-colored lighttext" href="#game"><ion-icon name="game-controller"></ion-icon></a></li>
-        <li data-tooltip-en="Videos" data-tooltip-it="Video"><a class="theme-colored lighttext" href="#video"><ion-icon name="videocam"></ion-icon></a></li>
-        <li data-tooltip-en="Stats" data-tooltip-it="Statistiche"><a class="theme-colored lighttext" href="#covid"><ion-icon name="stats-chart"></ion-icon></a></li>
-        <li data-tooltip-en="Art" data-tooltip-it="Arte"><a class="theme-colored lighttext" href="#art"><ion-icon name="color-palette-sharp"></ion-icon></a></li>
-        <li data-tooltip-en="Reading" data-tooltip-it="Letture"><a class="theme-colored lighttext" href="#read"><ion-icon name="book-sharp"></ion-icon></a></li>
-        <li data-tooltip-en="Switch language" data-tooltip-it="Cambia lingua"><a class="theme-colored lighttext" href="#" onclick="toggleLang()"><ion-icon name="language"></ion-icon><span class="it">EN</span><span class="en">IT</span></a></li>
+        <li data-tooltip-en="Tools" data-tooltip-it="Strumenti"><a class="notooltip theme-colored lighttext" href="#tools"><ion-icon name="hammer-sharp"></ion-icon></a></li>
+        <li data-tooltip-en="Have fun" data-tooltip-it="Svago"><a class="notooltip theme-colored lighttext" href="#game"><ion-icon name="game-controller"></ion-icon></a></li>
+        <li data-tooltip-en="Videos" data-tooltip-it="Video"><a class="notooltip theme-colored lighttext" href="#video"><ion-icon name="videocam"></ion-icon></a></li>
+        <li data-tooltip-en="Stats" data-tooltip-it="Statistiche"><a class="notooltip theme-colored lighttext" href="#covid"><ion-icon name="stats-chart"></ion-icon></a></li>
+        <li data-tooltip-en="Art" data-tooltip-it="Arte"><a class="notooltip theme-colored lighttext" href="#art"><ion-icon name="color-palette-sharp"></ion-icon></a></li>
+        <li data-tooltip-en="Reading" data-tooltip-it="Letture"><a class="notooltip theme-colored lighttext" href="#read"><ion-icon name="book-sharp"></ion-icon></a></li>
+        <li data-tooltip-en="Switch language" data-tooltip-it="Cambia lingua"><a class="notooltip theme-colored lighttext" href="#" onclick="toggleLang()"><ion-icon name="language"></ion-icon><span class="it">EN</span><span class="en">IT</span></a></li>
       </ol>
       <img id="stayhomelogo" src="img/stayhome.svg" class="theme-colored image" alt="StayHome">
     </header>
@@ -105,9 +105,8 @@
       <h2 class="listTitle en">About phase 2</h2>
       <ol>
         <li class="theme-colored lighttext">
-          <span style="background-image: url('https://invidio.us/vi/Exj0cZ758UI/mqdefault.jpg')" class="cover"></span>
-          <!-- <h4 class="it">Sulla <i>Fase 2</i></h4> -->
-          <!-- <h4 class="en">About <i>Phase 2</i></h4> -->
+          <span style="background-image: url('https://invidio.us/vi/Exj0cZ758UI/mqdefault.jpg')" class="cover round"></span>
+          <h4 class="">Breaking Italy</i></h4>
 
           <div class="button-group">
             <a href="https://invidio.us/watch?v=DIKlyVVfHaI" class="button goto theme-colored background" target="_blank" data-text-en="Germany: more cases in phase 2?" data-text-it="Germania: aumento casi nella fase 2?"></a>
@@ -123,7 +122,7 @@
       <ol>
 
         <li class="theme-colored lighttext">
-          <span style="background-image: url('img/jitsi.png')" class="cover"></span>
+          <span style="background-image: url('img/jitsi.png')" class="cover round"></span>
           <h4 class="it">Videoconferenze - Jitsi</h4>
           <h4 class="en">Videoconference - Jitsi</h4>
           <p class="it">In questo periodo abbiamo avuto un boom di videochat, spesso usando software proprietari (Google Hangout, Meet, Skype, WhatsApp, Zoom, etc.) che non offrono buone garanzie di privacy (conservando - e vendendo - le nostre interazioni, anche intime). Un'alternativa open-source è <a class="theme-colored lighttext" href="https://https://jitsi.org/" target="_blank" rel="noopener noreferrer">Jitsi</a>: una piattaforma sicura (cifrata), senza: login, limiti di persone o di tempo e non necessita di installazione (esistono ugualmente le app mobili) ed è possibile impostare una password per il meeting e prendervi parte tramite telefono (VoIP)! Di seguito trovate vari server che offrono questo servizio.</p>
@@ -142,19 +141,21 @@
         </li>
 
         <li class="theme-colored lighttext">
-          <span style="background-image: url('https://theblockchainland.com/wp-content/uploads/2019/07/amazix-moderation-bot-telegram-blockchainLand.png')" class="cover"></span>
+          <span style="background-image: url('https://theblockchainland.com/wp-content/uploads/2019/07/amazix-moderation-bot-telegram-blockchainLand.png')" class="cover round"></span>
           <h4 class="">Telegram</h4>
           <p class="it">WhatsApp è l'applicazione di messaggistica più usata ma anch'essa - come Messenger, Instagram e altri prodotti Facebook - è closed-source non offrono buone garanzie di privacy (conservando - e vendendo - le nostre interazioni, anche intime) e spesso riempie tanta memoria, rallentando il telefono.
             Una delle migliori alternative open-source è Telegram che salva tutto sul cloud (il database delle chat solitamente non supera i 20MB), permette le chat segrete (non sul cloud e con autodistruzione) ed ha particolare focus sulla privacy: ad esempio è possibile: chattare con qualcuno o in un gruppo senza rendere visibile il proprio numero; avere più controllo sulle impostazioni; avere chiamate <u>davvero</u> cifrate e di buona qualità.
           </p>
           <p class="en">WhatsApp is the most used chat app - like Messenger, Instagram and other Facebook's products - it's closed-source so doesn't offer a good privacy (saving - and selling - our interaction, even private ones) and usually uses a lot of phone's storage, slowing it down. <br>
             One of the best open-source alternative is Telegram wich is cloud-based (all chat database usually is less then 20MB), allows secred chat (not saved into the cloud and with self-distruct timer), and it's privacy-focused: chat with anyone or in a group without showing your phone number; have more control over who sees what about you; <u>really secret</u> good quality voice calls.</p>
-          <a href="https://telegram.org/" class="button goto theme-colored background" target="_blank">Homepage</a>
-          <a href="https://telegram.org/apps" class="button goto theme-colored background" target="_blank">Download</a>
+            <div class="button-group">
+              <a href="https://telegram.org/" class="button goto theme-colored background" target="_blank">Homepage</a>
+              <a href="https://telegram.org/apps" class="button goto theme-colored background" target="_blank">Download</a>
+            </div>
         </li>
 
         <li class="theme-colored lighttext">
-          <span style="background-image: url('img/disroot.jpg')" class="cover"></span>
+          <span style="background-image: url('img/disroot.jpg')" class="cover round"></span>
           <h4 class="">Disroot Covid Kit</h4>
           <!-- <h4 class="en"></h4> -->
           <p class="it"><a class="theme-colored lighttext" href="https://disroot.org/it/about"
@@ -188,7 +189,7 @@
         </li>
 
         <li class="theme-colored lighttext">
-          <span style="background-image: url('img/eigenlab_draw.png')" class="cover"></span>
+          <span style="background-image: url('img/eigenlab_draw.png')" class="cover round"></span>
           <h4 class="">eigenLab</h4>
           <p class="it">eigenLab è un hacklab, oltre a mantenere servizi web aperti alla comunità (pad, cloud, social, recupero hardware obsoleto), crea discussione critica su temi di diritto alla riservatezza digitale, mantiene un orto biologico e una ciclofficina nella facoltà di Scienze e una stampante 3D autoprodotta. Ha collaborato con l'Università di Pisa in diverse occasioni ma <a class="theme-colored lighttext" href="https://eigenlab.org/2511/">da quasi due anni è senza corrente</a> per brutale volontà del rettore UniPi, nonostante la difficoltà, eigenLab non si ferma! <br> P.S. Questo sito e tutto <a href="https://flowin.space" class="theme-colored lighttext">Flowin.Space</a> sono hostati sui loro server. Grazie!</p>
           <p class="en">eigenLab is an hacklab, inside the Polo Fibonacci in Pisa, a group of hackers from computer science to biology. They concern about physical and digital privacy organizing divulgative and technical seminars, creating a discussion about our digital rights and open-source alternatives. They talk about open-access, biological gardening, 3D printing and much more. They offer many alternative open-source and decetralized services such us: cloud, pad, socials, .. and more! <br>P.S. This site and all sites inside <a href="https://flowin.space" class="theme-colored lighttext">Flowin.Space</a> are hosted on their server. Thanks!</p>
@@ -201,7 +202,7 @@
         </li>
        
         <!-- <li class="theme-colored lighttext">
-          <span style="background-image: url('img/.jpg')" class="cover"></span>
+          <span style="background-image: url('img/.jpg')" class="cover round"></span>
           <h4 class="it"></h4>
           <h4 class="en"></h4>
           <p class="it"></p>
@@ -219,7 +220,7 @@
       <h2 class="listTitle en">Have fun!</h2>
       <ol>
         <li class="theme-colored lighttext">
-          <span style="background-image: url('img/minhex.jpg')" class="cover"></span>
+          <span style="background-image: url('img/minhex.jpg')" class="cover round"></span>
           <h4>MinHex</h4>
           <p class="it">MinHex è un campo minato in cui avete l'obbiettivo di sopravvivere spianando la strada per i
             vostri compagni. Siete
@@ -232,7 +233,7 @@
             data-text-en="Play" data-text-it="Gioca">!</a>
         </li>
         <li class="theme-colored lighttext">
-          <span style="background-image: url('img/jastersind.png')" class="cover"></span>
+          <span style="background-image: url('img/jastersind.png')" class="cover round"></span>
           <h4>JasterSind</h4>
           <p class="en">The original Master Mind is essentially a code-breaking game for two players (here one is
             the computer).
@@ -247,7 +248,7 @@
             data-text-en="Play" data-text-it="Gioca">!</a>
         </li>
         <li class="theme-colored lighttext">
-          <span style="background-image: url('img/irac.png')" class="cover"></span>
+          <span style="background-image: url('img/irac.png')" class="cover round"></span>
           <h4 class="it">Io Resto A Casa (IRAC)</h4>
           <h4 class="en">I Stay Home</h4>
           <p class="it">Sito di raccolta link utili divisi per categoria per combattere la noia da quarantena. L'idea di
@@ -258,7 +259,7 @@
             data-text-it="Io resto a casa"></a>
         </li>
         <li class="theme-colored lighttext">
-          <span style="background-image: url('img/cloch.png')" class="cover"></span>
+          <span style="background-image: url('img/cloch.png')" class="cover round"></span>
           <h4>Cloch</h4>
           <p class="it">Un orologio «grafico» costruito su un esagono, che cerca un approccio diverso nello scandire
             il tempo. Una volta
@@ -276,14 +277,14 @@
       <h2 class="listTitle en">Videos</h2>
       <ol>
         <li class="theme-colored lighttext">
-          <span style="background-image: url('https://invidio.us/vi/BtN-goy9VOY/mqdefault.jpg')" class="cover"></span>
+          <span style="background-image: url('https://invidio.us/vi/BtN-goy9VOY/mqdefault.jpg')" class="cover round"></span>
           <h4 class="it">Kurzgesagt - Cos'è il covid, come comportarsi?</h4>
           <h4 class="en">Kurzgesagt - The Coronavirus Explained & What You Should Do</h4>
           <a href="https://invidio.us/watch?v=BtN-goy9VOY" class="button goto theme-colored background" target="_blank"
             data-text-en="Watch it" data-text-it="Guardalo">!</a>
         </li>
         <li class="theme-colored lighttext">
-          <span style="background-image: url('https://invidio.us/vi/saLYkt8cPkc/mqdefault.jpg')" class="cover"></span>
+          <span style="background-image: url('https://invidio.us/vi/saLYkt8cPkc/mqdefault.jpg')" class="cover round"></span>
           <h4 class="it">Breaking Italy - App "IMMUNI" e relativi rischi</h4>
           <h4 class="en">Breaking Italy - "IMMUNI" app and related risks</h4>
           <p class="it">Alcune spiegazioni tecniche ma alla portata di tutti su cosa sia questa app <i>Immuni</i> di cui tanto si parla e che dovrebbe aiutarci a prevenire contagi nella fase 2, ma purtroppo non arriverà mai per tempo e rischia di portare più danni alla nostra privacy che qualsivoglia utilità.</p>
@@ -294,7 +295,7 @@
           </div>
         </li>
         <li class="theme-colored lighttext">
-          <span style="background-image: url('https://kdam.iltrovatore.it/p/103/sp/10300/thumbnail/entry_id/0_wh2e16i0/type/5/width/600/quality/100/name/0_wh2e16i0.jpg')" class="cover"></span>
+          <span style="background-image: url('https://kdam.iltrovatore.it/p/103/sp/10300/thumbnail/entry_id/0_wh2e16i0/type/5/width/600/quality/100/name/0_wh2e16i0.jpg')" class="cover round"></span>
           <h4 class="it">Zerocalcare - Quarantena a Rebibbia</h4>
           <h4 class="en">Zerocalcare - Rebibbia Quarantine</h4>
           <div class="button-group">
@@ -307,7 +308,7 @@
           </div>
         </li>
         <li class="theme-colored lighttext">
-          <span style="background-image: url('https://invidio.us/vi/1CRiNv3egDY/mqdefault.jpg')" class="cover"></span>
+          <span style="background-image: url('https://invidio.us/vi/1CRiNv3egDY/mqdefault.jpg')" class="cover round"></span>
           <h4 class="">Maccio Capatonda - TG Casa Quarantena</h4>
           <div class="button-group">
             <a href="https://invidio.us/watch?v=1CRiNv3egDY" class="button goto theme-colored background" target="_blank"> ep. 1</a>
@@ -319,7 +320,7 @@
           </div>
         </li>
         <li class="theme-colored lighttext">
-          <span style="background-image: url('https://www.trifiro.it/wp-content/uploads/2019/04/featured_lespresso.jpg')" class="cover"></span>
+          <span style="background-image: url('https://www.trifiro.it/wp-content/uploads/2019/04/featured_lespresso.jpg')" class="cover round"></span>
           <h4 class="">Dialoghi sul nostro tempo, con Marco Damilano - L'Espresso</h4>
           <!-- <a href="https://www.facebook.com/espressonline/videos/" class="button goto theme-colored background" target="_blank" data-text-en="Watch them on" data-text-it="Guardali su"> facebook</a> -->
           <a href="https://www.facebook.com/espressonline/videos/583596235835641" class="button goto theme-colored background" target="_blank" data-text-en="Interviewing " data-text-it="Intervista a ">Zerocalcare </a>
@@ -327,21 +328,21 @@
           <a href="https://video.espresso.repubblica.it/dialoghi-sul-nostro-tempo/" class="button goto theme-colored background" target="_blank" data-text-en="Watch them all on" data-text-it="Guardali tutti su "> L'Espresso</a>
         </li>
         <li class="theme-colored lighttext">
-          <span style="background-image: url('https://invidio.us/vi/JQBOs3XuSO8/mqdefault.jpg')" class="cover"></span>
+          <span style="background-image: url('https://invidio.us/vi/JQBOs3XuSO8/mqdefault.jpg')" class="cover round"></span>
           <h4 class="it">Cartoni Morti - Serve davvero la mascherina?</h4>
           <h4 class="en">Dead Cartoons - I REALLY need a face mask!</h4>
           <a href="https://invidio.us/watch?v=JQBOs3XuSO8" class="button goto theme-colored background" target="_blank"
             data-text-en="Watch it" data-text-it="Guardalo">!</a>
         </li>
         <li class="theme-colored lighttext">
-          <span style="background-image: url('https://invidio.us/vi/FVIGhz3uwuQ/mqdefault.jpg')" class="cover"></span>
+          <span style="background-image: url('https://invidio.us/vi/FVIGhz3uwuQ/mqdefault.jpg')" class="cover round"></span>
           <h4 class="it">Vox - Il covid non è una semplice influenza. È peggio!</h4>
           <h4 class="en">Vox - Coronavirus is not the flu. It's worse</h4>
           <a href="https://invidio.us/watch?v=FVIGhz3uwuQ" class="button goto theme-colored background" target="_blank"
             data-text-en="Watch it" data-text-it="Guardalo">!</a>
         </li>
         <li class="theme-colored lighttext">
-          <span style="background-image: url('https://invidio.us/vi/b7jZOLfXYd8/mqdefault.jpg')" class="cover"></span>
+          <span style="background-image: url('https://invidio.us/vi/b7jZOLfXYd8/mqdefault.jpg')" class="cover round"></span>
           <h4 class="">Better Call John Quarantena Show</h4>
           <p class="">Lo show che vi tiene compagnia durante questo periodo di isolamento con comici, rubriche balorde e tanta musica. Prendete snack e bibite e godetevi lo spettacolo!</p>
           <a href="https://invidio.us/watch?v=b7jZOLfXYd8" class="button goto theme-colored background" target="_blank"
@@ -355,7 +356,7 @@
       <h2 class="listTitle en">Stats</h2>
       <ol>
         <li class="theme-colored lighttext">
-          <span style="background-image: url('img/wom.png')" class="cover"></span>
+          <span style="background-image: url('img/wom.png')" class="cover round"></span>
           <h4 class="it">Statistiche mondiali</h4>
           <h4 class="en">World's covid stats</h4>
           <p class="it">Worldometer è portato avanti da un team internazionale di sviluppatori, ricercatori e volontari
@@ -369,7 +370,7 @@
             target="_blank" data-text-en="Visit" data-text-it="Visita"></a>
         </li>
         <li class="theme-colored lighttext">
-          <span style="background-image: url('img/itpcmap.jpg')" class="cover"></span>
+          <span style="background-image: url('img/itpcmap.jpg')" class="cover round"></span>
           <h4 class="it">Diffusione in Italia (mappa e dati)</h4>
           <h4 class="en">Covid's in Italy (map and stats)</h4>
           <p class="it">Mappa diffusione covid-19, aggiornata quotidianamente per regione e provincia di tutta l'Italia,
@@ -386,7 +387,7 @@
         </li>
 
         <li class="theme-colored lighttext">
-          <span style="background-image: url('img/whomap.jpg')" class="cover"></span>
+          <span style="background-image: url('img/whomap.jpg')" class="cover round"></span>
           <h4 class="it">Mappa covid mondiale</h4>
           <h4 class="en">World's covid map</h4>
           <p class="it">Mappa, dati e altro dell'Organizzazione Mondiale della Sanità (OMS), e altre piattaforme per la visualizzazione.</p>
@@ -400,7 +401,7 @@
         </li>
 
         <li class="theme-colored lighttext">
-          <span style="background-image: url('img/salutecovid.jpg')" class="cover"></span>
+          <span style="background-image: url('img/salutecovid.jpg')" class="cover round"></span>
           <h4 class="it">Ministero della Salute</h4>
           <h4 class="en">Italian Healthcare</h4>
           <p class="it">Sito ufficiale del Ministero della Salute della Repubblica Italiana, sezione covid-19, con news
@@ -428,7 +429,7 @@
       <h2 class="listTitle en">Art</h2>
       <ol>
         <li class="theme-colored lighttext">
-          <span style="background-image: url('img/am.svg')" class="cover"></span>
+          <span style="background-image: url('img/am.svg')" class="cover round"></span>
           <h4 class="it">Arte Migrante (serate virtuali)</h4>
           <h4 class="en">Arte Migrante (virtual meetings)</h4>
           <p class="it"><a class="theme-colored lighttext" href="https://www.artemigrante.eu/chi-siamo">Arte
@@ -444,7 +445,7 @@
 
 
         <li class="theme-colored lighttext">
-          <span style="background-image: url('img/pov.jpg')" class="cover"></span>
+          <span style="background-image: url('img/pov.jpg')" class="cover round"></span>
           <h4 class="">Point of Vision</h4>
           <p class="it">Point of Vision è un mio progetto artistico, al momento è rappresentato da una serie di illustrazioni digitali intitolata <i>Senza Parole</i>, che rappresenta parole e sentimenti intraducibili in un modo grafico e moderno. Le immagini non ne cercano di descrivere il significato ma sono frutto delle sensazioni e dei loro influssi. <br> Dove l'immaginazione inizia. Dove le parole non arrivano.</p>
           <p class="en">Point of Vision is a personal project of mine, now it has a set of digital artwork representing untranslatable words and feelings, in a artistic and modern way. The images don't try to describe the meaning of the words but the sensations they created in me while drawing them. <br> Where the imagination begins. Where words can't reach.</p>
@@ -453,7 +454,7 @@
         </li>
         
         <li class="theme-colored lighttext">
-          <span style="background-image: url('img/impressions.jpg')" class="cover"></span>
+          <span style="background-image: url('img/impressions.jpg')" class="cover round"></span>
           <h4 class="it">Impressioni (in arrivo)</h4>
           <h4 class="en">Impressions (coming)</h4>
           <p class="it">Raccolta personale di alcune foto scattate negli anni con le mie fedeli compagne di viaggio, una <i>Nikon D5000</i> e una <i>Olympus EM10-III</i>.</p>
@@ -469,7 +470,7 @@
       <h2 class="listTitle en">Reading</h2>
       <ol>
         <li class="theme-colored lighttext">
-          <span style="background-image: url('https://static.ilmanifesto.it/2020/04/01clt2aperturahank-willis-thomas-a-place-to-call-home.jpg')" class="cover"></span>
+          <span style="background-image: url('https://static.ilmanifesto.it/2020/04/01clt2aperturahank-willis-thomas-a-place-to-call-home.jpg')" class="cover round"></span>
           <h4 class="it">Un evento inatteso che spinge verso la poesia della vita</h4>
           <h4 class="en"></h4>
           <p class="it">Pandemia: la filosofia dello stato d’eccezione cambia. E la cooperazione può prevalere sulla competizione. Riflessioni sull'attuale situazione di quarantena scritte da <a class="theme-colored lighttext" href="https://it.wikipedia.org/wiki/Alfonso_Maurizio_Iacono">Alfonso M. Iacono</a> filosofo e docente ordinario di <i>Storia della Filosofia</i> all'Università di Pisa.</p>
@@ -477,7 +478,7 @@
           <a href="https://ilmanifesto.it/un-evento-inatteso-che-spinge-verso-la-poesia-della-vita/" class="button goto theme-colored background" target="_blank" data-text-en="Read" data-text-it="Leggi"></a>
         </li>
         <li class="theme-colored lighttext">
-          <span style="background-image: url('https://www.giordanoruini.com/wp-content/uploads/2019/06/cropped-pri-7.jpg')" class="cover"></span>
+          <span style="background-image: url('https://www.giordanoruini.com/wp-content/uploads/2019/06/cropped-pri-7.jpg')" class="cover round"></span>
           <h4 class="it">Non voglio tornare alla normalità, voglio ritornare alla Vita!</h4>
           <h4 class="en">I don't wanna come back to normality, I wanna come back to Life!</h4>
           <p class="it">Riflessioni sull'attuale situazione di quarantena scritte da <a class="theme-colored lighttext" href="https://www.giordanoruini.com/">Giordano Ruini</a> scrittore, poeta, insegnante e videomaker.</p>

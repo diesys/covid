@@ -17,6 +17,8 @@ body {
     background-image: url('noise.png') !important;
     color: #ddd;
     width: 100%;
+    line-height: 1.25em;
+    z-index: 20000;
 }
 
 a {
@@ -89,7 +91,8 @@ body header #menu {
 }
 
 body header #menu li::after,
-#menu_legend li::after {
+#menu_legend li::after,
+a:not(.notooltip)::after {
     pointer-events: none;
     position: absolute;
     height: min-content;
@@ -102,12 +105,20 @@ body header #menu li::after,
     transform: translate(-20%, 120%);
     position: absolute;
     box-shadow: 0 1px 10px #000000a0;
+    z-index: 20000 !important;
 }
 body header #menu li:hover::after,
-#menu_legend li:hover::after {
+#menu_legend li:hover::after,
+a:not(.notooltip):hover::after {
     transition: all .4s 0s;
     transform: translate(-20%, 100%);
     filter: opacity(1);
+}
+
+a:not(.notooltip):hover::after {
+    content: attr(href);
+    text-transform: lowercase;
+    font-size: 10pt;
 }
 
 body.en header #menu li::after,
@@ -234,7 +245,7 @@ body #container .list ol {
 }
 body #container .list ol li {
     background: #00000044;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* max-width: 50%; */
     min-width: 200px;
     max-width: 40%;
@@ -251,7 +262,7 @@ body #container .list ol li {
     height: min-content;
 }
 body #container .list ol li:hover {
-    background: #00000090;
+    background: #00000070;
     /* transform: translateY(-5px) */
 }
 body #container .list ol li h4 {
@@ -265,8 +276,20 @@ body #container .list ol li p {
     line-height: 1.1em;
     text-align: justify;
 }
-body #container .list ol li:hover .cover {
-    /* filter: blur(0px); */
+body #container .list ol li .cover {
+    border-radius: 6px 6px 0 0;
+}
+body #container .list ol li .cover.round {
+    border-radius: 6px 6px 70% 6px;
+    border: none !important;
+    margin-bottom: .3em;
+    box-shadow: 0 5px 20px -10px #000;
+    border-bottom: 1px solid #00000090 !important;
+    /* border-bottom: 1px solid #000000a0 !important; */
+}
+body #container .list ol li:hover .cover.round {
+    border-radius: 6px 6px 0 0;
+    box-shadow: 0 0 0 #00000000;
 }
 body #container .list ol li .cover {
     min-height: 200px;
@@ -274,8 +297,7 @@ body #container .list ol li .cover {
     background-size: cover;
     background-position: center center;
     /* filter: blur(1px); */
-    transition: all .5s;
-    border-bottom: 1px solid #00000090;
+    transition: all .6s .1s;
 }
 body #container .list ol li .button {
     text-decoration: none;
