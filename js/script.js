@@ -52,8 +52,8 @@ function toggleLang() {
 let mainNavLinks = document.querySelectorAll("#menu li a");
 let mainSections = document.querySelectorAll("#container .list");
 
-let lastId;
-let cur = [];
+// let lastId;
+// let cur = [];
 
 // https://css-tricks.com/sticky-smooth-active-nav/
 window.addEventListener("scroll", event => {
